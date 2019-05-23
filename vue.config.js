@@ -20,7 +20,7 @@ module.exports = {
     sourceMap:false,
     loaderOptions:{
       stylus:{
-        import: path.resolve(__dirname,'./src/assets/css/_base.styl')
+        import: path.resolve(__dirname,'./src/assets/less/_base.less')
       }
     },
     modules:false

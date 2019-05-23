@@ -5,6 +5,8 @@ import store from './store'
 import './lib'
 import Bus from './lib/bus'
 import './registerServiceWorker'
+import './assets/less/_common.less'
+import './assets/icon/iconfont.css'
 
 if(!process.env.NODE_ENV === "production") require('./mock')
 
