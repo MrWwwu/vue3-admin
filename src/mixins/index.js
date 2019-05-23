@@ -21,8 +21,12 @@ const mixins = {
             }],
             defaultRadio:'',
             // 多选框默认值
-            defaultCheck:['0','1']
-
+            defaultCheck:['0','1'],
+            // 输入框
+            inputSet:{
+                value:'111',
+                placeholder:'请输入搜索内容'
+            }
         }
     }
 }

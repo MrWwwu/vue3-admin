@@ -4,6 +4,7 @@
       按钮型单选框 : <WradioBut :list="radioList" @radioBtnChange="radioChange" :defaultRadio="defaultRadio"/>
       多选框 : <WcheckBox :list="radioList" :defaultCheck="defaultCheck" @checkBoxChange="checkBoxChange"/>
       按钮型多选框 : <WcheckBoxBtn :list="radioList" :defaultCheck="defaultCheck" @chackBoxBtnChange="checkBoxChange"/>
+      输入框 : <Winput :inputSet="inputSet" @inputChange="inputChange"/>
   </div>
 </template>
 <script>
@@ -17,6 +18,10 @@ export default {
     },
     checkBoxChange(val){
       console.log(val)
+    },
+    inputChange(val){
+      console.log(val)
+      console.log(this.inputSet.value)
     }
   }
 }
