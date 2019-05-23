@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-      <Wradio :list="radioList" @radioChange="radioChange"/>
+      单选框 : <Wradio :list="radioList" @radioChange="radioChange" :defaultRadio="defaultRadio"/>
+      按钮型单选框 : <WradioBut :list="radioList" @radioBtnChange="radioBtnChange" :defaultRadio="defaultRadio"/>
   </div>
 </template>
 <script>
@@ -10,6 +11,9 @@ export default {
   name: 'home',
   methods:{
     radioChange(val){
+      console.log(val)
+    },
+    radioBtnChange(val){
       console.log(val)
     }
   }

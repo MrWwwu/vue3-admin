@@ -3,14 +3,19 @@ const mixins = {
         return {
             // 单选框
             radioList:[{
-                value:'备选项A',
+                value:'青岛',
                 label:'0'
             },
             {
-                value:'备选项B',
+                value:'北京',
                 label:'1'
-            }]
-            
+            },
+            {
+                value:'上海',
+                label:'2',
+                disabled:true
+            }],
+            defaultRadio:'',
         }
     }
 }
