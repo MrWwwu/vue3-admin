@@ -26,6 +26,20 @@ const mixins = {
             inputSet:{
                 value:'111',
                 placeholder:'请输入搜索内容'
+            },
+            // 选择框
+            selectSet:{
+                title:'请选择',
+                value:'',
+                list:[{
+                    value:'0',
+                    label:'青岛'
+                },
+                {
+                    value:'1',
+                    label:'上海',
+                    disabled:true
+                }]
             }
         }
     }

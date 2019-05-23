@@ -28,6 +28,7 @@ export default {
     .el-input{
         width: 240px;
         height: 38px;
+        line-height: 38px;
     }
 }
 </style>

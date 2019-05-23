@@ -5,6 +5,7 @@
       多选框 : <WcheckBox :list="radioList" :defaultCheck="defaultCheck" @checkBoxChange="checkBoxChange"/>
       按钮型多选框 : <WcheckBoxBtn :list="radioList" :defaultCheck="defaultCheck" @chackBoxBtnChange="checkBoxChange"/>
       输入框 : <Winput :inputSet="inputSet" @inputChange="inputChange"/>
+      单选框 : <Wselect :selectSet="selectSet" @selectChange="selectChange"/>
   </div>
 </template>
 <script>
@@ -22,6 +23,9 @@ export default {
     inputChange(val){
       console.log(val)
       console.log(this.inputSet.value)
+    },
+    selectChange(val){
+      console.log(val)
     }
   }
 }
