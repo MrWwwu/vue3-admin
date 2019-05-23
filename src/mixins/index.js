@@ -30,7 +30,8 @@ const mixins = {
             // 选择框
             selectSet:{
                 title:'请选择',
-                value:'',
+                value:[],
+                multiple:true, // 单选还是多选 多选时value=>array,单选时value=>string
                 list:[{
                     value:'0',
                     label:'青岛'
@@ -39,6 +40,10 @@ const mixins = {
                     value:'1',
                     label:'上海',
                     disabled:true
+                },
+                {
+                    value:'2',
+                    label:'北京'
                 }]
             }
         }

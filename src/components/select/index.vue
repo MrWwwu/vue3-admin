@@ -1,7 +1,7 @@
 <template>
     <div class="Wselect">
         <span>{{selectSet.title?selectSet.title:'查询条件'}} : </span>
-        <el-select v-model="selectSet.value" filterable :placeholder="selectSet.placeholder?selectSet.placeholder:'请选择'" clearable @change="handelChange" :disabled="selectSet.disabled">
+        <el-select v-model="selectSet.value" filterable :placeholder="selectSet.placeholder?selectSet.placeholder:'请选择'" clearable @change="handelChange" :disabled="selectSet.disabled" :multiple="selectSet.multiple">
             <el-option
             v-for="(item,index) in selectSet.list"
             :key="index"
