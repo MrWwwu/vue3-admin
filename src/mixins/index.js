@@ -14,8 +14,15 @@ const mixins = {
                 value:'上海',
                 label:'2',
                 disabled:true
+            },
+            {
+                value:'香港',
+                label:'3'
             }],
             defaultRadio:'',
+            // 多选框默认值
+            defaultCheck:['0','1']
+
         }
     }
 }

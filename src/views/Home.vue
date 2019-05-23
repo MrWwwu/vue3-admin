@@ -1,7 +1,8 @@
 <template>
   <div class="home">
       单选框 : <Wradio :list="radioList" @radioChange="radioChange" :defaultRadio="defaultRadio"/>
-      按钮型单选框 : <WradioBut :list="radioList" @radioBtnChange="radioBtnChange" :defaultRadio="defaultRadio"/>
+      按钮型单选框 : <WradioBut :list="radioList" @radioBtnChange="radioChange" :defaultRadio="defaultRadio"/>
+      多选框 : <WcheckBox :list="radioList" :defaultCheck="defaultCheck" @checkBoxChange="checkBoxChange"/>
   </div>
 </template>
 <script>
@@ -13,7 +14,7 @@ export default {
     radioChange(val){
       console.log(val)
     },
-    radioBtnChange(val){
+    checkBoxChange(val){
       console.log(val)
     }
   }
