@@ -1,26 +1,22 @@
 <template>
   <div class="home">
-      <p>1111</p>
-      <p>1111</p>
-      <p>1111</p>
-      <p>1111</p>
-      <p>1111</p>
-      <p>1111</p>
-      <p>1111</p>
-      <p>1111</p>
-      <p>1111</p>
-      <p>1111</p>
-      <p>1111</p>
+      <Wradio :list="radioList" @radioChange="radioChange"/>
   </div>
 </template>
-
 <script>
+import mixins from '../mixins'
 export default {
+  mixins:[mixins],
   name: 'home',
+  methods:{
+    radioChange(val){
+      console.log(val)
+    }
+  }
 }
 </script>
 <style lang="less" scoped>
-p{
-  line-height: 200px;
+.home{
+  background: #fff;
 }
 </style>

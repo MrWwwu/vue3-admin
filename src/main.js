@@ -1,3 +1,7 @@
+
+
+import './assets/less/_common.less'
+import './assets/icon/iconfont.css'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -5,8 +9,7 @@ import store from './store'
 import './lib'
 import Bus from './lib/bus'
 import './registerServiceWorker'
-import './assets/less/_common.less'
-import './assets/icon/iconfont.css'
+import './components'
 
 if(!process.env.NODE_ENV === "production") require('./mock')
 

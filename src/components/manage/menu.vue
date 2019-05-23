@@ -31,7 +31,7 @@
 </template>
 <script>
 export default {
-    name:'menu',
+    name:'Wmenu',
     props:{
         isCollapse:{
             type:Boolean,
