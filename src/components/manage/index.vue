@@ -6,7 +6,7 @@
             </el-header>
             <el-container>
                 <el-aside :class="{'isCollapse':isCollapse}">
-                    <Wmenu :isCollapse='isCollapse'/>
+                    <Wmenu :isCollapse='isCollapse' :list="list"/>
                 </el-aside>
                 <el-main>
                     <router-view/>
@@ -26,7 +26,36 @@ export default {
     },
     data(){
         return {
-            isCollapse : false
+            isCollapse : false,
+            list:[{
+                name:'home',
+                icon:'Wicon-home',
+                title:'首页',
+                children:[{
+                    name:'404',
+                    title:'组件用法',
+                    children:[{
+                        name:'home',
+                        title:'demo',
+                    },{
+                        name:'demo',
+                        title:'demo1',
+                        children:[
+                            {
+                                name:'demo2',
+                                title:'demo2'
+                            }
+                        ]
+                    }]
+                },{
+                    name:'explain',
+                    title:'首页1',
+                },]
+            },{
+                name:'about',
+                icon:'Wicon-qrcode',
+                title:'关于'
+            }]
         }
     },
     methods:{
@@ -41,7 +70,10 @@ export default {
     height: 100vh;
     overflow: scroll;
     .el-header{
-        padding: 0;
+        padding-left: 0;
+        border-bottom: 1px solid #ccc;
+        // box-shadow: 0 2px 0 #ccc;
+        // box-shadow: 0 2px 3px hsla(0, 0%, 7%, .1),0 0 0 1px hsla(0, 0%, 7%, .1);
     }
     .el-container{
         height: 100vh;

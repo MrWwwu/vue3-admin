@@ -26,6 +26,8 @@
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  margin:0 5px 2px 2px;
 }
 .Wicon-check-circle:before {
   content: "\e77d";
