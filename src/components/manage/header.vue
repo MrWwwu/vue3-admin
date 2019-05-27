@@ -1,9 +1,11 @@
 <template>
     <div class="Wheader">
-        <div class="Wlogo">
-            <span class="Wicon-Gitlab"></span>
-            <span>vue-admin</span>
-        </div>
+        <slot>
+            <div class="Wlogo">
+                <span class="Wicon-Gitlab"></span>
+                <span>vue-admin</span>
+            </div>
+        </slot>
         <div class="Wicon" :class="{'isCollapse':isCollapse}" @click="shrink">
             <i class="Wicon-menu"></i>
         </div>
