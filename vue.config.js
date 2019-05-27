@@ -14,7 +14,11 @@ module.exports = {
   productionSourceMap:false,
   runtimeCompiler:true,
   transpileDependencies:[],
-  configureWebpack:()=>{},
+  configureWebpack:config=>{
+    // config.externals = {
+    //   'element-ui': 'ELEMENT',
+    // }
+  },
   css:{
     extract:prd,
     sourceMap:false,

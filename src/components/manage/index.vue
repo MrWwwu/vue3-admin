@@ -72,8 +72,6 @@ export default {
     .el-header{
         padding-left: 0;
         border-bottom: 1px solid #ccc;
-        // box-shadow: 0 2px 0 #ccc;
-        // box-shadow: 0 2px 3px hsla(0, 0%, 7%, .1),0 0 0 1px hsla(0, 0%, 7%, .1);
     }
     .el-container{
         height: 100vh;
@@ -81,6 +79,7 @@ export default {
             height: 100%;
             width: 200px !important;
             transition: all .3s;
+            
         }
         .isCollapse{
             width: 64px !important;

@@ -555,5 +555,23 @@ background: red;
     //溢出用省略号显示
     text-overflow:ellipsis; 
      //溢出不换行 
-     white-space:nowrap;
+    white-space:nowrap;
+}
+.componCss{
+    width:320px;
+    display: flex;
+    &>span{
+        display: inline-block;
+        width: 80px;
+        line-height: 38px;
+    }
+}
+#app{
+    .el-input__inner{
+        height: 38px;
+        line-height: 38px;
+    }
+    .el-input-number{
+        line-height: 36px;
+    }
 }

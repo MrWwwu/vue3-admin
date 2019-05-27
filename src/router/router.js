@@ -1,7 +1,10 @@
 import Manage from '@c/manage'
 import err_404 from '@v/404'
 export default [
-
+    {
+      path:'/',
+      redirect:'/home'
+    },
     {
       path: '/',
       name: 'manage',

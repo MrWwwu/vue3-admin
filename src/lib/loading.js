@@ -7,7 +7,7 @@ function startLoading(){
   loading = Vue.prototype.$loading({
     lock: true,
     text: "玩命加载中...",
-    target: document.querySelector('.loading-area')//设置加载动画区域
+    target: document.querySelector('.el-main')//设置加载动画区域
   });
 }
 
