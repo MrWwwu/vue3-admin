@@ -54,11 +54,3 @@ export default {
   }
 }
 </script>
-<style lang="less" scoped>
-.home{
-  background: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}
-</style>

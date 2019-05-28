@@ -48,8 +48,8 @@ export default {
                         ]
                     }]
                 },{
-                    name:'explain',
-                    title:'首页1',
+                    name:'echarts',
+                    title:'echarts',
                 },]
             },{
                 name:'about',
@@ -69,6 +69,8 @@ export default {
 .manage{
     height: 100vh;
     overflow: scroll;
+    max-width: 1680px;
+    min-width: 1000px;
     .el-header{
         padding-left: 0;
         border-bottom: 1px solid #ccc;
@@ -88,6 +90,13 @@ export default {
             height: 100%;
             background-color:#eee;
             padding: 10px;
+            &>div{
+                background: #fff;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                min-height: 730px;
+            }
         }
     }
 }

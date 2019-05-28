@@ -1,4 +1,6 @@
 import Vue from 'vue'
+import ECharts from 'vue-echarts/components/ECharts'
+import 'echarts/lib/chart/line'
 
 import Wradio from '@c/radio'
 import WradioBut from '@c/radio/radioButton'
@@ -19,3 +21,4 @@ Vue.component('Wselect',Wselect) // 下拉选择框
 Vue.component('Wcascader',Wcascader) // 级联选择器
 Vue.component('WdatePicker',WdatePicker) // 单个日期选择器
 Vue.component('WdoubleDate',WdoubleDate) // 双个日期选择器
+Vue.component('Wchart', ECharts) // echarts

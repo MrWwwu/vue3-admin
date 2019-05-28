@@ -16,9 +16,9 @@ export default [
           component: ()=> import ('@v/Home.vue')
         },
         {
-          path: '/explain',
-          name: 'explain',
-          component: ()=> import ('@v/Explain.vue')
+          path: '/echarts',
+          name: 'echarts',
+          component: ()=> import ('@v/echarts.vue')
         },
         {
           path: '/demo',
