@@ -10,6 +10,7 @@ import './lib'
 import Bus from './lib/bus'
 import './registerServiceWorker'
 import './components'
+import echarts from 'echarts'
 
 if(!process.env.NODE_ENV === "production") require('./mock')
 
