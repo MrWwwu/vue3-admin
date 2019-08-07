@@ -2,8 +2,8 @@
     <div class="Winput componCss">
         <span>{{title}} : </span>
         <template>
-            <el-input v-model="value" :placeholder="placeholder" :disabled="disabled" clearable @change="handleChange" v-if="type==='text'"/>
-            <el-input-number v-model="value1" @change="handleChange" :disabled="disabled" :min="min" :max="max" v-else-if="type==='number'"/>
+            <el-input-number v-model.trim="value1" @change="handleChange" :disabled="disabled" :min="min" :max="max" v-if="type==='number'" style="width:240px;"/>
+            <el-input v-model.trim="value" :placeholder="placeholder" :disabled="disabled" clearable @change="handleChange" :type="type" v-else style="width:240px;"/>
         </template>
     </div>
 </template>
@@ -36,6 +36,10 @@ export default {
         disabled:{
             type:Boolean,
             default:false
+        },
+        width:{
+            type:String,
+            default:'240px'
         }
     },
     data(){
@@ -51,10 +55,3 @@ export default {
     }
 }
 </script>
-<style lang="less" scoped>
-.Winput{
-    .el-input{
-        width: 240px;
-    }
-}
-</style>

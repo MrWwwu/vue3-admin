@@ -1,9 +1,15 @@
 import Manage from '@c/manage'
 import err_404 from '@v/404'
+import login from '@v/login/login.vue'
 export default [
     {
       path:'/',
-      redirect:'/home'
+      redirect:'/login'
+    },
+    {
+      path:'/login',
+      name:'login',
+      component:login
     },
     {
       path: '/',
@@ -37,12 +43,12 @@ export default [
           // this generates a separate chunk (about.[hash].js) for this route
           // which is lazy-loaded when the route is visited.
           component: () => import(/* webpackChunkName: "about" */ '@v/About.vue')
-        },
-        {
-          path:'*',
-          name:'404',
-          component : err_404
         }
       ]
+    },
+    {
+      path:'*',
+      name:'404',
+      component : err_404
     }
   ]

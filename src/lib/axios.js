@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { baseURL } from '@/config'
-import { showFullScreenLoading, tryHideFullScreenLoading } from '@/plugin/loading.js'
+import { showFullScreenLoading, tryHideFullScreenLoading } from '@/lib/loading.js'
 import { Message } from 'element-ui'
 import router from '@/router'
 

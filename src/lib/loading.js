@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
-let loading;
-let needLoadingRequestCount = 0;
+let loading,
+    needLoadingRequestCount = 0;
 
 function startLoading(){
   loading = Vue.prototype.$loading({

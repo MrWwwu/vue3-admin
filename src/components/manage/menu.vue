@@ -25,5 +25,6 @@ export default {
 .menu{
     height:100%;
     overflow: scroll;
+    background-color: #545c64;
 }
 </style>

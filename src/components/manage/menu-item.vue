@@ -2,9 +2,12 @@
     <div class="menu-item">
         <el-menu :default-active="$route.name"
         class="el-menu-vertical-demo" 
-        :collapse="isCollapse" router>
+        :collapse="isCollapse" router
+        background-color="#545c64"
+        text-color="#fff"
+        active-text-color="#ffd04b">
             <template v-for="(item,index) in list">
-                <WsubMenu :key="index" v-if="item.children" :parent="item" />
+                <WsubMenu :key="index" v-if="item.list.length>0" :parent="item" />
                 <el-menu-item :index="item.name" v-else :key="index">
                     <i :class="item.icon"></i>
                     <span slot="title">{{item.title}}</span>

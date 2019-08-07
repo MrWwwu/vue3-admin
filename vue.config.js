@@ -59,6 +59,14 @@ module.exports = {
       warnings:false,
       errors:true
     },
-    proxy:'http://localhost:3000'
+    proxy:{
+      '/platform': {
+        target: 'http://47.108.79.217:80',
+        changeOrigin: true,
+        pathRewrite: {
+            '^/platform': '/platform'
+        }
+      }
+    }
   }
 }

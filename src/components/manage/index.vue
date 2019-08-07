@@ -27,36 +27,11 @@ export default {
     data(){
         return {
             isCollapse : false,
-            list:[{
-                name:'home',
-                icon:'Wicon-home',
-                title:'首页',
-                children:[{
-                    name:'404',
-                    title:'组件用法',
-                    children:[{
-                        name:'home',
-                        title:'demo',
-                    },{
-                        name:'demo',
-                        title:'demo1',
-                        children:[
-                            {
-                                name:'demo2',
-                                title:'demo2'
-                            }
-                        ]
-                    }]
-                },{
-                    name:'echarts',
-                    title:'echarts',
-                },]
-            },{
-                name:'about',
-                icon:'Wicon-qrcode',
-                title:'关于'
-            }]
+            list:[]
         }
+    },
+    mounted(){
+        this.list = JSON.parse(sessionStorage.getItem('menu'))
     },
     methods:{
         isShrink(msg){
@@ -72,16 +47,14 @@ export default {
     max-width: 1680px;
     min-width: 1000px;
     .el-header{
-        padding-left: 0;
-        border-bottom: 1px solid #ccc;
+        padding: 0;
     }
     .el-container{
         height: 100vh;
         .el-aside{
             height: 100%;
             width: 200px !important;
-            transition: all .3s;
-            
+            transition: all .3s; 
         }
         .isCollapse{
             width: 64px !important;
@@ -95,7 +68,7 @@ export default {
                 padding: 20px;
                 border: 1px solid #ccc;
                 border-radius: 10px;
-                min-height: 730px;
+                min-height: 800px;
             }
         }
     }
