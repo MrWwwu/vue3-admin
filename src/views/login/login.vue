@@ -41,16 +41,16 @@ export default {
       }else if(this.password === ''){
         this.$message.error('请输入密码');
       }else{
-        let res = await useLogin({
-          userName:this.userName,
-          password:this.password
-        })
-        sessionStorage.setItem('token',res.token)
-        sessionStorage.setItem('menu',JSON.stringify(res.children))
-        this.$message({
-          message: '登录成功',
-          type: 'success'
-        });
+        // let res = await useLogin({
+        //   userName:this.userName,
+        //   password:this.password
+        // })
+        // sessionStorage.setItem('token',res.token)
+        // sessionStorage.setItem('menu',JSON.stringify(res.children))
+        // this.$message({
+        //   message: '登录成功',
+        //   type: 'success'
+        // });
         this.$router.push({name:'home'})
       }
       
